@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script src="js/frameworks/angular.js"></script>
+    <script src="js/controllers/testCtrl2.js"></script>
+    <script src="js/controllers/testCtrl1.js"></script>
+    <script src="js/services/testEventService.js"></script>
+    <script src="js/directives/testDirective/testDirective.js"></script>
+    <script src="js/directives/testDirective2/testDirective2.js"></script>
+
+
+    <title>Event Example</title>
+</head>
+
+<body ng-app="testEventModule">
+    <div ng-controller="testCtrl1">
+        <input ng-model="sourceMessage">
+        Event 1 Listener: <input ng-model="message">
+        <button ng-click="handleClick(sourceMessage);">Fire {{eventName}}</button>
+    </div>
+    <div ng-controller="testCtrl2" style="padding-left: 135px;">
+        Event 2 Listener: <input ng-model="message">
+    </div>
+    <hr>
+    First Name:<input ng-model="firstName"/>
+    Last Name:<input ng-model="lastName"/>
+
+    <div test-directive first-name="firstName" last-name="lastName"></div>
+    <hr>
+    <div test-directives first-name="firstName" last-name="lastName"></div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="testEventModule" ng-controller="mainCtrl">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script src="js/frameworks/angular.js"></script>
+    <script src="js/controllers/mainCtrl.js"></script>
+    <script src="js/controllers/testCtrl2.js"></script>
+    <script src="js/controllers/testCtrl1.js"></script>
+    <script src="js/services/testEventService.js"></script>
+    <script src="js/directives/testDirective/testDirective.js"></script>
+    <script src="js/directives/testDirective2/testDirective2.js"></script>
+
+
+    <title>Event Example</title>
+</head>
+
+<body>
+    <div ng-controller="testCtrl1">
+        <input ng-model="sourceMessage">
+        Event 1 Listener: <input ng-model="message">
+        <button ng-click="handleClick(sourceMessage);">Fire {{eventName}}</button>
+    </div>
+    <div ng-controller="testCtrl2" style="padding-left: 135px;">
+        Event 2 Listener: <input ng-model="message">
+    </div>
+    <hr>
+    First Name:<input ng-model="input1"/>
+    Last Name:<input ng-model="input2"/>
+
+    <div test-directive first-name="input1" last-name="input2"></div>
+    <hr>
+    <div test-directive2 first-name="input1" last-name="input2" do-something="doSomething(increment);"></div>
+    Do Something Count: {{ doSomethingCount }}
+</body>
+
+</html>

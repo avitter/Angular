@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script src="js/frameworks/angular.js"></script>
+    <script src="js/controllers/testCtrl2.js"></script>
+    <script src="js/controllers/testCtrl1.js"></script>
+    <script src="js/services/testEventService.js"></script>
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css">
+    <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"></script>
+    <script src="js/drawTool.js" type="text/javascript"></script>
+    <!-- DOJO Script Block -->
+
+    <script type="text/javascript">
+        dojo.require("esri.map");
+        dojo.require("esri.arcgis.utils");
+        dojo.require("esri.layers.agstiled");
+        dojo.require("esri.toolbars.draw");
+        var map, tb;
+
+        function init() {
+            map = new esri.Map("mapDiv", {
+                center: [-25.312, 34.307],
+                zoom: 3,
+                basemap: "streets"
+            });
+            dojo.connect(map, "onLoad", initToolbar);
+
+        }
+
+       // dojo.addOnLoad(init);
+
+        dojo.ready(init);
+    </script>
+
+    <title>Map</title>
+</head>
+
+<body ng-app="myDrawTool">
+<div ng-controller="drawCtrl">
+    <input ng-model="sourceMessage">
+    Event 1 Listenter: <input ng-model="message">
+    <button ng-click="handleClick(sourceMessage);">Fire {{eventName}}</button>
+</div>
+<div ng-controller="mapCtrl" style="padding-left: 135px;">
+    Event 2 Listener: <input ng-model="message">
+</div>
+<div id="info">
+    <div>Select a shape then draw on map to add graphic</div>
+    <button id="toggleDraw" data-dojo-type="digi.form.Button">Toggle Draw Tool</button>
+    <button id="drawPoint" data-dojo-type="dijit.form.Button">Point</button>
+    <button id="drawMultipoint" data-dojo-type="dijit.form.Button">Multipoint</button>
+    <button id="drawExtent" data-dojo-type="dijit.form.Button">Extent</button>
+    <button id="drawPolyline" data-dojo-type="dijit.form.Button">Polyline</button>
+    <button id="drawFreehandPolyline" data-dojo-type="dijit.form.Button">Freehand Polyline</button>
+    <button id="drawPolygon" data-dojo-type="dijit.form.Button">Polygon</button>
+    <button id="drawFreehandPolygon" data-dojo-type="dijit.form.Button">Freehand Polygon</button>
+    <button id="drawLine" data-dojo-type="dijit.form.Button">Line</button>
+</div>
+<div id="mapDiv" class="mapContent"></div>
+</body>
+
+</html>

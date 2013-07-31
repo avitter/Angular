@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/frameworks/jquery-1.9.1.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css">
+    <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/"></script>
+    <script type="text/javascript">
+        dojo.require("esri.map");
+        dojo.require("esri.arcgis.utils");
+        dojo.require("esri.layers.agstiled");
+        dojo.require("esri.toolbars.draw");
+        var map, tb;
+
+        function init() {
+            map = new esri.Map("mapDiv", {
+                center: [-25.312, 34.307],
+                zoom: 3,
+                basemap: "streets"
+            });
+            dojo.connect(map, "onLoad", initToolbar);
+
+        }
+
+        // dojo.addOnLoad(init);
+
+        dojo.ready(init);
+    </script>
+</head>
+<body>
+    <p id="result">test</p>
+    <div id="mapDiv" class="mapContent"></div>
+</body>
+</html>

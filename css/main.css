@@ -1,0 +1,9 @@
+.done-true {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.mapContent{
+    height: 500;
+    width: 500;
+}
