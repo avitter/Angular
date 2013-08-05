@@ -1,10 +1,12 @@
-function mainCtrl($scope) {
-    $scope.doSomethingCount = 0;
-    $scope.increment = 1;
+var testEventModule = angular.module('testEventModule', []);
 
-    $scope.doSomething = function(increment)
+function mainCtrl($scope) {
+    $scope.letterCount = 0;
+    $scope.numLetter = 0;
+
+    $scope.updateCount = function(totalCount)
     {
-        $scope.doSomethingCount += increment;
+        $scope.letterCount = totalCount;
     };
 }
 

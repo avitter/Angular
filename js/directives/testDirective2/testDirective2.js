@@ -1,5 +1,5 @@
 //var directiveModule = angular.module('directiveModule', []);
-testEventModule.directive('testDirective2', function($parse)
+testEventModule.directive('testDirective2', function()
 {
     var directiveDefinition =
     {
@@ -7,10 +7,12 @@ testEventModule.directive('testDirective2', function($parse)
         {
             fName: '=firstName',
             lName: '=lastName',
-            doStuff: '&doSomething'
+            countUpdated: '&onNameUpdate'
         },
 
-        templateUrl: "js/directives/testDirective2/testDirective2Partial.html",
+        templateUrl: 'js/directives/testDirective2/testDirective2Partial.html',
+
+        //template: '<div>Component First Name: {{ fName }} <BR><button type="button" ng-click="btnClick()">Reset</button> </div>',
 
         link: function linkFn(scope, lElement, attrs)
         {
@@ -31,25 +33,40 @@ testEventModule.directive('testDirective2', function($parse)
             {
                 $scope.fNameUpdateCount = 0;
                 $scope.lNameUpdateCount = 0;
+                $scope.totalCount = $scope.fNameUpdateCount + $scope.lNameUpdateCount;
 
                 $scope.fNameUpdate = function()
                 {
-                    $scope.fNameUpdateCount += 1;
+                    if($scope.fName)
+                    {
+                        $scope.fNameUpdateCount = $scope.fName.length;
+                        $scope.totalCount = $scope.fNameUpdateCount + $scope.lNameUpdateCount;
+
+                        $scope.countUpdated({totalCount: $scope.totalCount});
+                    }
                 }
 
                 $scope.lNameUpdate = function()
                 {
-                    $scope.lNameUpdateCount += 1;
+                    if($scope.lName)
+                    {
+                        $scope.lNameUpdateCount = $scope.lName.length;
+                        $scope.totalCount = $scope.fNameUpdateCount + $scope.lNameUpdateCount;
+
+                        $scope.countUpdated({totalCount: $scope.totalCount});
+                    }
                 }
 
                 $scope.btnClick = function()
                 {
-                    var totalCount =  $scope.fNameUpdateCount + $scope.lNameUpdateCount;
-                    $scope.doStuff($scope.fNameUpdateCount);
+                    $scope.fName = '';
+                    $scope.lName = '';
+                    //var totalCount =  $scope.fNameUpdateCount + $scope.lNameUpdateCount;
+                    //$scope.countUpdated({totalCount: $scope.totalCount});
                 }
             }
         ]
-    }
+    };
 
     return directiveDefinition;
 });
