@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d26fa0d1-4c06-42f4-adf3-47a5a9261910" name="Default" comment="test commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Index.html" afterPath="$PROJECT_DIR$/Index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/mainCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/mainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDirective.html" afterPath="$PROJECT_DIR$/testDirective.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/directives/testDirective2/testDirective2.js" afterPath="$PROJECT_DIR$/js/directives/testDirective2/testDirective2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/directives/testDirective2/testDirective2Partial.html" afterPath="$PROJECT_DIR$/js/directives/testDirective2/testDirective2Partial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="d26fa0d1-4c06-42f4-adf3-47a5a9261910" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Angular.iws" />
@@ -32,7 +25,7 @@
     <file path="/testDirective2.js" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1375657999566" ignored="false" />
     <file path="/testDirective2Partial.html" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1375705229019" ignored="false" />
     <file path="/mainCtrl.js" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1375304599365" ignored="false" />
-    <file path="/Dummy.txt" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1375656160054" ignored="false" />
+    <file path="/Dummy.txt" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1375705613829" ignored="false" />
     <file path="$USER_HOME$/angular-phonecat/app/index.html" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1374536779876" ignored="false" />
     <file path="/index.html" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1374536775076" ignored="false" />
     <file path="$USER_HOME$/angular-phonecat/app/js/controllers.js" changelist="d26fa0d1-4c06-42f4-adf3-47a5a9261910" time="1374459036209" ignored="false" />
@@ -472,7 +465,11 @@
       <created>1375274632262</created>
       <updated>1375274632262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated TestDirective2">
+      <created>1375705634549</created>
+      <updated>1375705634549</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -497,8 +494,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31438127" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -512,7 +510,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -560,7 +557,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated TestDirective2" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -575,6 +572,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="test commit" />
+    <MESSAGE value="Updated TestDirective2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
